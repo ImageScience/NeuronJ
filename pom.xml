@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>28.0.0</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>NeuronJ_</artifactId>
+	<version>1.5.0-SNAPSHOT</version>
+
+	<name>NeuronJ</name>
+	<description>The NeuronJ plugin for ImageJ</description>
+	<url>https://imagescience.org/meijering/software/neuronj/</url>
+	<inceptionYear>2004</inceptionYear>
+	<organization>
+		<name>N/A</name>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>ImageScience</name>
+			<url>https://imagescience.org/meijering/software/imagescience/</url>
+			<distribution>manual</distribution>
+			<comments>Not an OSS license!</comments>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Erik Meijering</name>
+			<url>http://imagescience.org/meijering/</url>
+			<organization>ImageScience</organization>
+			<organizationUrl>http://imagescience.org/</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>None</name>
+		</mailingList>
+	</mailingLists>
+	<scm>
+		<connection>scm:git:git://github.com/fiji/TransformJ</connection>
+		<developerConnection>scm:git:git@github.com:fiji/TransformJ</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imagescience/NeuronJ</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagescience/NeuronJ/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<license.licenseName>N/A</license.licenseName>
+		<license.copyrightOwners>Erik Meijering</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>scijava.public</id>
+			<url>http://maven.scijava.org/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- ImageScience dependencies -->
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>imagescience</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<!-- ImageJ dependencies -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
